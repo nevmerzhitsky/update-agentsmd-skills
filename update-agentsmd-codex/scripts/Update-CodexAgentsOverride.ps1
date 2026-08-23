@@ -63,7 +63,7 @@ if (-not (Test-Path -LiteralPath $indexPath -PathType Leaf)) {
 $instructionFiles = @(Get-ImportedInstructionFiles -IndexPath $indexPath -RootPath $repositoryRootPath)
 $rootUri = [System.Uri]($repositoryRootPath + [System.IO.Path]::DirectorySeparatorChar)
 $output = [System.Text.StringBuilder]::new()
-[void]$output.AppendLine("<!-- Generated from docs/agents/index.md by Update-CodexAgentsOverride.ps1. Do not edit manually. -->")
+[void]$output.AppendLine("<!-- Generated from docs/agents.md/index.md by the update-agentsmd-codex skill. Do not edit manually. -->")
 
 foreach ($instructionFile in $instructionFiles) {
     $instructionUri = [System.Uri]$instructionFile

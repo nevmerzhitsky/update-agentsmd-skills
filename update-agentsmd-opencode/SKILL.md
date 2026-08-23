@@ -1,6 +1,6 @@
 ---
 name: update-agentsmd-opencode
-description: Use when docs/agents/index.md imports change and opencode.json.instructions must be synchronized in the manifest-defined order.
+description: Use when docs/agents.md/index.md imports change and opencode.json.instructions must be synchronized in the manifest-defined order.
 license: "MIT"
 compatibility: "Windows 11 with Windows PowerShell 5.1+"
 metadata:
@@ -10,7 +10,7 @@ metadata:
 
 # Update OpenCode Agent Instructions
 
-Run this skill after adding, removing, or reordering `@` imports reachable from `docs/agents/index.md`.
+Run this skill after adding, removing, or reordering `@` imports reachable from `docs/agents.md/index.md`.
 
 ```powershell
 & "<skill-directory>\scripts\Update-OpenCodeInstructions.ps1" -RepositoryRoot "<repository-root>"

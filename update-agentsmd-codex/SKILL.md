@@ -1,6 +1,6 @@
 ---
 name: update-agentsmd-codex
-description: Use when docs/agents/index.md imports change and the Codex-only generated AGENTS.override.md must be refreshed.
+description: Use when docs/agents.md/index.md imports change and the Codex-only generated AGENTS.override.md must be refreshed.
 license: "MIT"
 compatibility: "Windows 11 with Windows PowerShell 5.1+"
 metadata:
@@ -10,7 +10,7 @@ metadata:
 
 # Generate Codex Agent Instructions
 
-Run this skill after adding, removing, reordering, or editing instructions reachable from `docs/agents/index.md`.
+Run this skill after adding, removing, reordering, or editing instructions reachable from `docs/agents.md/index.md`.
 
 ```powershell
 & "<skill-directory>\scripts\Update-CodexAgentsOverride.ps1" -RepositoryRoot "<repository-root>"
