@@ -54,7 +54,7 @@ function Get-ImportedInstructionFiles {
 }
 
 $repositoryRootPath = (Resolve-Path -LiteralPath $RepositoryRoot).Path
-$indexPath = Join-Path $repositoryRootPath "docs\agents\index.md"
+$indexPath = Join-Path $repositoryRootPath "docs\agents.md\index.md"
 $configPath = Join-Path $repositoryRootPath "opencode.json"
 
 if (-not (Test-Path -LiteralPath $indexPath -PathType Leaf)) {
